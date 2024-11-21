@@ -1,9 +1,11 @@
-cmake_minimum_required(VERSION 3.5.1)
 if(CMAKE_VERSION VERSION_LESS 3.12)
+    cmake_minimum_required(VERSION 3.5.1)
     cmake_policy(VERSION ${CMAKE_VERSION})
 else()
-    cmake_policy(VERSION 3.5.1...3.29.0)
+    cmake_minimum_required(VERSION 3.12.0)
+    cmake_policy(VERSION 3.12.0...3.31.0)
 endif()
+
 message(STATUS "Using CMake version ${CMAKE_VERSION}")
 
 if(POLICY CMP0169)
