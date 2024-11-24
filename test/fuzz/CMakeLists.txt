@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5.1)
+cmake_minimum_required(VERSION 3.12)
 
 if(CMAKE_C_COMPILER_ID MATCHES "Clang")
     enable_language(CXX)
