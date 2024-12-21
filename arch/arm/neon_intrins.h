@@ -26,7 +26,7 @@
 } while (0)
 
 #  if defined(__clang__) && defined(__arm__) && !defined(__GNUC__)
-/* Clang for 32-bit Android and Alpine Linux has too strict alignment requirement (:256) for x4 NEON intrinsics */
+/* Clang for 32-bit Android and musl-libc have too strict alignment requirement (:256) for x4 NEON intrinsics */
 #    undef ARM_NEON_HASLD4
 #    undef vld1q_u16_x4
 #    undef vld1q_u8_x4
